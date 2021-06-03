@@ -15,6 +15,9 @@ header .navbar-default {
   border: none;
   padding: 0;
   background-color: #FFFFFF; }
+header .navbar .container .navbar-header {
+  background-color: #FFFFFF;
+  border: none; }
 header .navbar .container .collapse .nav li:after {
   content: '';
   display: block;
