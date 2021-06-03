@@ -16,28 +16,31 @@ header .navbar-default {
   border: none;
   padding: 0;
   background-color: #FFFFFF; }
-header .navbar .container .navbar-header {
-  background-color: #FFFFFF;
-  border: none; }
-header .navbar .container .collapse .nav li:after {
-  content: '';
-  display: block;
-  border-top: solid 3px #49cbcd;
-  width: 1%;
-  visibility: hidden;
-  position: absolute;
-  bottom: -20px;
-  transition: 0.5s; }
-  @media screen and (max-width: 767px) {
-    header .navbar .container .collapse .nav li:after {
-      bottom: 0; } }
-header .navbar .container .collapse .nav a:hover, header .navbar .container .collapse .nav li:hover:after {
-  color: #49cbcd;
-  visibility: visible;
-  width: 100%; }
-header .navbar .container .collapse .nav a {
-  color: #484c55;
-  font-size: 15px; }
+header .navbar {
+  margin-bottom: 0 !important;
+  padding-bottom: 20px !important; }
+  header .navbar .container .navbar-header {
+    background-color: #FFFFFF;
+    border: none; }
+  header .navbar .container .collapse .nav li:after {
+    content: '';
+    display: block;
+    border-top: solid 3px #49cbcd;
+    width: 1%;
+    visibility: hidden;
+    position: absolute;
+    bottom: -20px;
+    transition: 0.5s; }
+    @media screen and (max-width: 767px) {
+      header .navbar .container .collapse .nav li:after {
+        bottom: 0; } }
+  header .navbar .container .collapse .nav a:hover, header .navbar .container .collapse .nav li:hover:after {
+    color: #49cbcd;
+    visibility: visible;
+    width: 100%; }
+  header .navbar .container .collapse .nav a {
+    color: #484c55;
+    font-size: 15px; }
 
 .container-fluid.banner {
   background-image: url("../images/banner_02.jpg");
