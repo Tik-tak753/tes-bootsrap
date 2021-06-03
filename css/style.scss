@@ -4,7 +4,10 @@
 @import "../bootstrap-3.4.1-dist/css/bootstrap-theme.min.css";
 @import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }}
 *{
   margin: 0;
   padding: 0;
@@ -16,6 +19,7 @@ header{
   .navbar-default{
     border: none;
     padding: 0;
+    background-color: #FFFFFF;
   }
   .navbar {
     .container{
@@ -28,6 +32,9 @@ header{
       .collapse{
         .nav{
           li:after{
+            @include max-screen(767px){
+              bottom: 0;
+            }
             content: '';
             display: block;
             border-top: solid 3px #49cbcd;
@@ -36,11 +43,6 @@ header{
             position: absolute;
             bottom: -20px;
             transition: 0.5s;}
-          li{
-            text-align: center;
-
-
-            }
 
             a:hover,li:hover:after{
               color: #49cbcd;

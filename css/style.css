@@ -13,7 +13,8 @@ body {
 
 header .navbar-default {
   border: none;
-  padding: 0; }
+  padding: 0;
+  background-color: #FFFFFF; }
 header .navbar .container .collapse .nav li:after {
   content: '';
   display: block;
@@ -23,8 +24,9 @@ header .navbar .container .collapse .nav li:after {
   position: absolute;
   bottom: -20px;
   transition: 0.5s; }
-header .navbar .container .collapse .nav li {
-  text-align: center; }
+  @media screen and (max-width: 767px) {
+    header .navbar .container .collapse .nav li:after {
+      bottom: 0; } }
 header .navbar .container .collapse .nav a:hover, header .navbar .container .collapse .nav li:hover:after {
   color: #49cbcd;
   visibility: visible;
